@@ -1,7 +1,12 @@
 import React, { useEffect, useRef } from "react";
 import "./fluff.css"
 import { Link } from "react-router-dom";
-
+import img1 from "./Images/IMG_2763.jpg"
+import img2 from "./Images/IMG_2764.jpg"
+import img3 from "./Images/IMG_2696.jpg"
+import img4 from "./Images/IMG_2771.jpg"
+import audio from "./Audio/Taketones_CartoonVoice I Love You.wav"
+import gif from "./Gifs/rose-6870_512.gif"
 
 function Fluff() {
   const textRef = useRef(null); 
@@ -58,7 +63,7 @@ function Fluff() {
     <div>
       {/* Audio element */}
       <audio ref={audioRef} id="myAudio">
-        <source src="Audio/Taketones_CartoonVoice I Love You.wav" type="audio/ogg" />
+        <source src={audio} type="audio/ogg" />
       </audio>
 
       {/* Header section */}
@@ -73,16 +78,16 @@ function Fluff() {
         <br />
         <div className="photos">
           <div className="photo-item">
-            <img onClick={PlaySound} className="hidden" alt="plm" src="Images/IMG_2763.jpg" />
+            <img onClick={PlaySound} className="hidden" alt="plm" src={img1} />
           </div>
           <div className="photo-item">
-            <img onClick={PlaySound} className="hidden" alt="plms" src="Images/IMG_2764.jpg" />
+            <img onClick={PlaySound} className="hidden" alt="plms" src={img2} />
           </div>
           <div className="photo-item">
-            <img onClick={PlaySound} className="hidden" src="Images/IMG_2696.jpg" alt="HEHE" />
+            <img onClick={PlaySound} className="hidden" src={img3} alt="HEHE" />
           </div>
           <div className="photo-item">
-            <img onClick={PlaySound} className="hidden" src="Images/IMG_2771.jpg" alt="CACA" />
+            <img onClick={PlaySound} className="hidden" src={img4} alt="CACA" />
           </div>
         </div>
       </section>
@@ -94,7 +99,7 @@ function Fluff() {
           O FLORICICA PENTRU <Link to="/fluffers">HUN BUN</Link>
           <i className="fa-solid fa-heart" />
         </h1>
-        <img src="Gifs/rose-6870_512.gif" alt="Animated Rose" />
+        <img src={gif} alt="Animated Rose" />
       </section>
 
       {/* Scroll-to-top button */}

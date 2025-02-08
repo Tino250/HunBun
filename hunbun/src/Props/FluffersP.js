@@ -1,6 +1,7 @@
 import React, { useRef } from 'react'
 import Hun from '../Components/Hun'
 import Bun from '../Components/Bun'
+import pop from "../Audio/pop.wav"
 
 function FluffersP({name,bio,height,dob,bY,bM,bD,pfp,id}) {
 
@@ -39,7 +40,7 @@ function FluffersP({name,bio,height,dob,bY,bM,bD,pfp,id}) {
   return (
     <>
     <audio ref={scaryRef}>
-      <source src='Audio/pop.wav' />
+      <source src={pop} />
     </audio>
             <div  className="fluffers-card-container">
           <img className="fluffers-hero-image" src={pfp} alt="Spinning glass cube"/>

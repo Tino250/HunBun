@@ -1,12 +1,13 @@
 import React from "react";
 import "./hunbun.css"
+import h from "../Images/H.png"
 
 function Hun() {
   return (
     <div>
       <article className="hun-cta">
         <img 
-          src="Images/H.png" 
+          src={h}
           alt="Bluetit" 
           className="hun-cta__image"
         />

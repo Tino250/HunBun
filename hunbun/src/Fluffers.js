@@ -1,6 +1,9 @@
 import React from 'react';
 import "./fluffers.css";
 import FluffersP from './Props/FluffersP';
+import hun from "./Images/pfpH.png"
+import bun from "./Images/pfpB.png"
+
 
 
 function Fluffers() {
@@ -16,7 +19,7 @@ function Fluffers() {
             bY={2006}
             bM={5}
             dob={"25/5/2006"}
-            pfp="../public/Images/pfpB.png"
+            pfp= {bun}
         />
         <FluffersP
             id={2}
@@ -27,7 +30,7 @@ function Fluffers() {
             bY={2006}
             bM={4}
             dob={"24/4/2006"}
-            pfp="../public/Images/pfpH.png"
+            pfp={hun}
         />
 
 

@@ -1,13 +1,13 @@
 import React from 'react';
 import "./hunbun.css"; // Make sure to use the updated CSS file
-
+import b from "../Images/B.png"
 function Bun() {
 
   return (
     <div>
       <article className="hun-cta">
         <img 
-          src="Images/B.png" 
+          src={b}
           alt="Bluetit" 
           className="hun-cta__image"
         />
