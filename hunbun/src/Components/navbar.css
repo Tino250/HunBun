@@ -1,0 +1,185 @@
+nav{
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 20px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  overflow-x: hidden;
+
+}
+
+
+#page-i{
+  cursor: pointer;
+  color: white;
+}
+
+nav i{
+
+cursor: pointer;
+}
+
+.logo{
+  margin-right: auto;
+  margin-left: auto;
+  width: 20vw;
+  height: 35vh;
+}
+
+body{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+background-color: white;
+}
+
+#sidebar{
+background-color: rgb(0, 0, 0);
+top: 0;
+bottom: 0;
+left: 0;
+width: 50vw;
+height: 100vh;
+position: fixed;
+visibility: hidden;
+transition: 0.2s ease all;
+opacity: 0;
+}
+
+#visible{
+  background-color: rgb(0, 0, 0);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 10vw;
+  height: 100vh;
+  position: fixed;
+  visibility: visible;
+  z-index: 2;
+}
+
+.close-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+.pages-container{
+display: flex;
+flex-direction: column;
+gap: 20px;
+justify-content: center;
+align-items: center;
+
+}
+
+.side-btns{
+  gap: 10px;
+  width: 10vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+
+
+.side-btns h1{
+  color: white;
+font-family:"Lilita One";
+letter-spacing: 2px;
+border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+
+.side-btns button{
+ font-family:"Lilita One";
+ letter-spacing: 1px;
+border: none;
+background-color: rgb(0, 0, 0);
+color: white;
+border-bottom:1px solid #74C0FC;
+cursor: pointer;
+}
+
+#close-i{
+color:#74C0FC;
+cursor: pointer;
+margin: 30px;
+}
+
+
+@media (max-width:1024px) {
+  #visible{
+  width: 50vw !important;
+}
+}
+
+@media (max-width:1000px) {
+  section{
+    width: 50vw;
+  }
+
+  .logo{
+    margin-right: auto;
+    margin-left: auto;
+    width: 50vw;
+    height: 20vh;
+  }
+}
+
+
+@media (max-width:768px) {
+
+
+  .logo{
+    margin-right: auto;
+    margin-left: auto;
+    width: 50vw;
+    height: 60vh;
+  }
+  
+  #visible{
+    width: 50vw !important;
+  }
+  
+  }
+  
+  
+  #page-i{
+    color: white;
+  }
+
+  @media (max-width:425px) {
+    #visible{
+      width: 50vw !important;
+    }
+  
+  .logo{
+    margin-right: auto;
+    margin-left: auto;
+    width: 60vw !important;
+    height: 50vh !important;
+  }
+  }
+  
+
+@media (max-width:375px) {
+  #visible{
+    width: 50vw !important;
+  }
+
+.logo{
+  margin-right: auto;
+  margin-left: auto;
+  width: 60vw !important;
+  height: 35vh !important;
+}
+}
+
+

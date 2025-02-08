@@ -1,0 +1,67 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+.g-container{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+#galery-header-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: auto;
+  margin-bottom: 25px;
+  font-family: "Lilita One";
+
+}
+
+#g-i{
+  width: auto;
+  height: auto;
+  color: black;
+  text-decoration: none;
+  border: 1px solid rgb(255, 255, 255);
+   box-shadow: 0px 20px 5px rgb(0, 0, 0);
+}
+
+.g-div{
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+
+.g-container img{
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  width: 20vw;
+  border-radius: 20px;
+}
+
+@media(max-width:900px){
+    .g-container{
+      grid-template-columns: repeat(2,1fr);
+    }
+    .g-container img{
+      margin-left: auto;
+      margin-right: auto;
+      height: auto;
+      width: 40vw;
+      border-radius: 20px;
+    }
+
+  }

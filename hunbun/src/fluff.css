@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  
+}
+
+* {
+  box-sizing: border-box;
+
+}
+
+#photo-grid{
+  color: white;
+  display: grid;
+  place-items: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#header{
+  background-color:#0099ff; ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: wheat;
+  min-height: 100vh;
+  width: 100vw !important;
+}
+
+#header h1{
+  font-family: "Outfit", serif;
+  font-size:100px;
+  width: 100%; /* Set a fixed width to prevent layout shifts */
+  text-align: center;
+  letter-spacing: 7px;
+  margin-bottom: auto;
+  margin-top: auto;
+}
+#header p{
+  margin-bottom: 20px;
+  font-family: "42dot Sans";
+}
+
+#photo-grid{
+  background-color: #e7008a;
+  padding: 3rem;
+}
+
+.photos{
+ display: grid;
+ grid-template-columns: repeat(2,1fr);
+ grid-template-rows: repeat(1,1fr); 
+ gap: 20px;
+
+}
+ 
+@keyframes borderAnimation {
+  0% {
+    border-image-source: linear-gradient(45deg, red, yellow, green, cyan, blue, magenta, red);
+  }
+20%{
+  border-image-source: linear-gradient(45deg, rgb(39, 15, 255), yellow, rgb(53, 88, 141), cyan, blue, magenta, red);
+}
+30%{
+  border-image-source: linear-gradient(45deg, red, yellow, rgb(128, 0, 0), cyan, blue, rgb(255, 196, 0), red);
+}
+
+  100% {
+    border-image-source: linear-gradient(405deg, red, yellow, green, cyan, blue, magenta, red);
+  }
+}
+
+#photo-grid img {
+  height: 80vh;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  border: 10px solid;
+  border-image: linear-gradient(45deg, red, yellow, green, cyan, blue, magenta, red) 1;
+  animation: borderAnimation 1s linear infinite;
+}
+
+#photo-grid img:hover{
+  transform: scale(1.1);
+}
+
+#photo-grid h1{
+  font-family:"Lilita One" ;
+  letter-spacing: 2px;
+}
+
+@media(max-width:800px) {
+    .photos{
+      grid-template-columns: repeat(1,1fr);
+      
+    }
+
+    #photo-grid img{
+      height: 50vh;
+      width: 50vh;
+     }
+
+    #photo-grid{
+      width: 100vw !important;
+    }
+
+
+    
+  }
+
+.photos:nth-child(2){
+    transition-delay: 200ms;
+}
+.photos:nth-child(3){
+  transition-delay: 300ms;
+}
+
+.photos:nth-child(4){
+  transition-delay: 400ms;
+}
+
+#photo-grid h1{
+  color: white;
+}
+
+#photo-grid p{
+  color: white;
+}
+
+
+.hidden{
+opacity: 0;
+filter: blur(5px);
+transform: translateX(-100%);
+transition: all 1s;
+}
+
+svg {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 2s;
+}
+
+
+.show{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+
+#footer h1{
+  margin-top: 50px;
+  font-family: "Lilita One" ;
+  letter-spacing: 10px;
+
+}
+
+#footer{
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: black;
+  box-shadow:20px 7px 70px black;
+  width: 100vw !important;
+}
+
+
+@media (max-width: 1024px) {
+  #footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #footer h1 {
+    
+    font-size: 15px;
+  }
+}
+
+#photo-grid{
+  width: 100vw !important;
+}
+
+#myBtn{
+  border-radius: 25px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border: none;
+  margin: 10px;
+}
+
+@media (max-width:425px){
+
+  #footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #footer h1{
+    letter-spacing: 2px;
+    
+    font-size: 12px;
+  }
+
+}
+  
