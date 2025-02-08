@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/HunBun/static/css/main.95b9befd.css",
+    "main.js": "/HunBun/static/js/main.94f90608.js",
+    "index.html": "/HunBun/index.html",
+    "main.95b9befd.css.map": "/HunBun/static/css/main.95b9befd.css.map",
+    "main.94f90608.js.map": "/HunBun/static/js/main.94f90608.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.95b9befd.css",
+    "static/js/main.94f90608.js"
+  ]
+}
