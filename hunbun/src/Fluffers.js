@@ -2,6 +2,7 @@ import React from 'react';
 import "./fluffers.css";
 import FluffersP from './Props/FluffersP';
 
+
 function Fluffers() {
   return (
     <div>
@@ -15,7 +16,7 @@ function Fluffers() {
             bY={2006}
             bM={5}
             dob={"25/5/2006"}
-            pfp="public/Images/pfpB.png"
+            pfp="../public/Images/pfpB.png"
         />
         <FluffersP
             id={2}
@@ -26,7 +27,7 @@ function Fluffers() {
             bY={2006}
             bM={4}
             dob={"24/4/2006"}
-            pfp="Images/pfpH.png"
+            pfp="../public/Images/pfpH.png"
         />
 
 

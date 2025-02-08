@@ -8,26 +8,26 @@ function Calendar() {
   const audioref=useRef(null)
 
   function anniversary(){
-    document.getElementById("info-image").src="Images/30.png"
+    document.getElementById("info-image").src="../public/Images/30.png"
     if(audioref.current){
       audioref.current.play()
 }
   }
   function date(){
-    document.getElementById("info-image").src="Images/12.png"
+    document.getElementById("info-image").src="../public/Images/12.png"
     if(audioref.current){
           audioref.current.play()
     }
 
   }
   function xmas(){
-    document.getElementById("info-image").src="Images/25 (2).png"
+    document.getElementById("info-image").src="../public/Images/25 (2).png"
     if(audioref.current){
       audioref.current.play()
 }
   }
   function v(){
-     document.getElementById("info-image").src="Images/14.png"
+     document.getElementById("info-image").src="../public/Images/14.png"
      if(audioref.current){
       audioref.current.play()
 }
@@ -44,7 +44,7 @@ function Calendar() {
     </audio>
     <h1 id='c-h1'>This page is dedicated to important events in our life fluffs</h1>
       <div id='event-container'>
-        <img id='info-image' src="Images/30.png" alt='doamne ajuta' />
+        <img id='info-image' src="../public/Images/30.png" alt='doamne ajuta' />
       </div>
 
 

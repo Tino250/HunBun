@@ -21,7 +21,7 @@ function Home() {
       </div>
     </div>
     <div class="home-image">
-      <img src="Images/Image Background Orange Minimal Phone Wallpaper (1).png" alt="Background" />
+      <img src="../public/Images/Image Background Orange Minimal Phone Wallpaper (1).png" alt="Background" />
     </div>
   </section>
     </>
