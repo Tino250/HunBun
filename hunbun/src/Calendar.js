@@ -11,26 +11,26 @@ function Calendar() {
   const audioref=useRef(null)
 
   function anniversary(){
-    document.getElementById("info-image").src="Images/30.png"
+    document.getElementById("info-image").src=i30
     if(audioref.current){
       audioref.current.play()
 }
   }
   function date(){
-    document.getElementById("info-image").src="Images/12.png"
+    document.getElementById("info-image").src=i12
     if(audioref.current){
           audioref.current.play()
     }
 
   }
   function xmas(){
-    document.getElementById("info-image").src="Images/25 (2).png"
+    document.getElementById("info-image").src=i25
     if(audioref.current){
       audioref.current.play()
 }
   }
   function v(){
-     document.getElementById("info-image").src="Images/14.png"
+     document.getElementById("info-image").src=i14
      if(audioref.current){
       audioref.current.play()
 }
