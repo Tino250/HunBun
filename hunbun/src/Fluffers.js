@@ -15,7 +15,7 @@ function Fluffers() {
             bY={2006}
             bM={5}
             dob={"25/5/2006"}
-            pfp="/Images/pfpB.png"
+            pfp="public/Images/pfpB.png"
         />
         <FluffersP
             id={2}
