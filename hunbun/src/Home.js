@@ -1,6 +1,6 @@
 import React from 'react'
 import "./home.css"
-
+import home from "./Images/Image Background Orange Minimal Phone Wallpaper (1).png"
 function Home() {
 
 
@@ -21,7 +21,7 @@ function Home() {
       </div>
     </div>
     <div class="home-image">
-      <img src="Images/Image Background Orange Minimal Phone Wallpaper (1).png" alt="Background" />
+      <img src={home} alt="Background" />
     </div>
   </section>
     </>

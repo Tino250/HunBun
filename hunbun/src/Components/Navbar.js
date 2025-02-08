@@ -1,6 +1,10 @@
 import React, { useRef } from 'react'
 import "./navbar.css"
 import { Link } from 'react-router-dom'
+import logo from "../Images/logo.png"
+import hard from "../Audio/hard.wav"
+import pop from "../Audio/pop.wav"
+
 
 function Navbar() {
   const scaryRef=useRef(null)
@@ -40,16 +44,16 @@ function playAudioHard(){
     <>
 
 <audio ref={hardRef}>
-      <source src='Audio/hard.wav' />
+      <source src={hard} />
     </audio>
 
 <audio ref={scaryRef}>
-      <source src='Audio/pop.wav' />
+    <source src={pop} />
     </audio>
       <nav>
         <i onClick={toggleSideBar} class="fa-solid fa-ellipsis-vertical fa-2xl"></i>
          
-        <img onClick={home} className='logo' src='Images/logo.png'  />
+        <img onClick={home} className='logo' src={logo}  />
       </nav>
     
       <div  id={siderBar ? "visible":'sidebar'}>
