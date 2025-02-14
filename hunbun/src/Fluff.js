@@ -7,6 +7,7 @@ import img3 from "./Images/IMG_2696.jpg"
 import img4 from "./Images/IMG_2771.jpg"
 import audio from "./Audio/Taketones_CartoonVoice I Love You.wav"
 import gif from "./Gifs/rose-6870_512.gif"
+
 function Fluff() {
   const textRef = useRef(null); 
   const audioRef = useRef(null); 
@@ -62,7 +63,7 @@ function Fluff() {
     <div>
       {/* Audio element */}
       <audio ref={audioRef} id="myAudio">
-        <source src={audio}  type="audio/ogg" />
+        <source src={audio} type="audio/ogg" />
       </audio>
 
       {/* Header section */}
